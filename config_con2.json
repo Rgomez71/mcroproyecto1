@@ -1,0 +1,14 @@
+{
+  "data_dir": "/tmp/consul",
+  "log_level": "INFO",
+  "node_name": "nodo2",
+  "bind_addr": "192.168.100.7",
+  "server": true,
+  "ui": true,
+  "client_addr": "0.0.0.0",
+  "bootstrap_expect": 3,
+  "retry_join": ["192.168.100.7", "192.168.100.5", "192.168.100.6"],
+  "enable_local_script_checks": true
+}
+
+

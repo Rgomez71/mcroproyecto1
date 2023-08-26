@@ -1,0 +1,17 @@
+---
+- name: Aprovisionamiento de máquinas virtuales
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Instalar paquetes básicos
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - software-properties-common
+        - python3-pip
+
+  handlers:
+    # Define handlers si es necesario
+
